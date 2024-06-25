@@ -1,0 +1,1006 @@
+.homePage {
+    height: auto;
+    width: 100%;
+    @include displayFlexCenter;
+    flex-direction: column;
+    
+    .topSection {
+        width: 95vw;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        .leftPl {
+            width: 65vw;
+            height: 100vh;
+            @include displayFlexCenter;
+            flex-direction: column;
+            position: relative;
+            padding-left: 25px;
+
+            .mainBanner {
+                width: 85%;
+                height: 40vh;
+                display: flex;
+                justify-content: space-around;
+                background: url('../images/valhalabg.png');
+                background-size: cover;
+                border-radius: 10px;
+                padding: 2px;
+
+                .left {
+                    width: 50%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: start;
+                    text-align: start;
+                    flex-direction: column;
+                    position: relative;
+                    padding-left: 30px;
+
+                    #new {
+                        background-color: rgb(35, 207, 150);
+                        padding: 5px;
+                        width: 50px;
+                        border-radius: 5px;
+                        @include displayFlexCenter;
+                        box-shadow:
+                            0 0 5px aquamarine,
+                            0 0 25px aquamarine,
+                            0 0 50px aquamarine,
+                            0 0 200px aquamarine;
+                        color: white;
+                        font-family: Lakes;
+                        font-weight: 800;
+                        position: relative;
+                        right: auto;
+                        bottom: 10px;
+                    }
+
+                    h1 {
+                        font-family: Lakes;
+                        font-size: 38px;
+                        position: relative;
+                        display: flex;
+                        letter-spacing: 2px;
+                        color: white;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        left: auto;
+
+                        #as {
+                            position: relative;
+                            left: 5px;
+                        }
+
+                        #mid {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            #line1,
+                            #line2 {
+                                width: 20px;
+                                height: 2px;
+                                background-color: black;
+                            }
+                        }
+
+                        #val {
+                            color: aquamarine;
+                            position: relative;
+                            left: 5px;
+                        }
+                    }
+
+                    #text {
+                        font-family: Lakes;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+
+                    #price {
+                        font-family: Lakes;
+                        color: aquamarine;
+                        font-size: 18px;
+                        margin-top: 10px;
+                        margin-bottom: 5px;
+                        font-weight: 800;
+                    }
+
+                    .buttonSection {
+                        padding: 5px;
+                        border-radius: 5px;
+                        @include displayFlexAround;
+                        width: 200px;
+                        height: 3vh;
+                        position: relative;
+                        top: 10px;
+
+                        button {
+                            padding: 2px;
+                            border: none;
+                            background-color: transparent;
+                            font-family: Lakes;
+                            font-size: 24px;
+                            color: white;
+                            border-bottom: 2px solid aquamarine;
+                            cursor: pointer;
+
+                            &:nth-child(1) {
+                                width: 80px;
+                            }
+
+                            &:nth-child(2) {
+                                width: 120px;
+                                position: relative;
+                                left: 20px;
+                            }
+                        }
+
+                        button:hover {
+                            transition: 0.4s;
+                            background-color: aquamarine;
+                            border: none;
+                            box-shadow:
+                                0 0 5px aquamarine,
+                                0 0 25px aquamarine,
+                                0 0 50px aquamarine,
+                                0 0 200px aquamarine;
+                            border-radius: 5px;
+                            color: black;
+                        }
+                    }
+                }
+
+                .right {
+                    width: 50%;
+
+                    img {
+                        width: 70%;
+                        height: 45vh;
+                        position: relative;
+                        bottom: 45px;
+                        left: 30%;
+                    }
+                }
+            }
+
+            .bestSell {
+                width: 85%;
+                height: 25vh;
+                margin-top: 10px;
+
+                .title {
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    margin-bottom: 10px;
+
+                    p {
+                        color: white;
+                        font-family: Lakes;
+                        font-size: 32px;
+                        border-bottom: 2px solid gold;
+                    }
+                }
+
+                .cards {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin-top: 5px;
+
+                    .card {
+                        width: 23%;
+                        height: 15vh;
+
+                        .bg {
+                            border-radius: 5px;
+                            width: 100%;
+                            height: 13vh;
+                        }
+
+                        h1 {
+                            font-family: Lakes;
+                            color: white;
+                            font-size: 15px;
+                            padding: 3px;
+                            margin-top: 5px;
+                            background-color: rgb(236, 168, 22);
+                            box-shadow:
+                                0 0 2px rgb(236, 168, 22),
+                                0 0 3.5px rgb(236, 168, 22),
+                                0 0 5.6px rgb(236, 168, 22),
+                                0 0 12.5px rgb(236, 168, 22);
+                            border-radius: 5px;
+                            @include displayFlexCenter;
+                        }
+
+                        .bg {
+                            background-size: cover;
+                        }
+
+                    }
+                }
+            }
+
+            .ads {
+                width: 85%;
+                height: 22vh;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+
+                .title {
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    margin-bottom: 10px;
+
+                    p {
+                        color: white;
+                        font-family: Lakes;
+                        font-size: 32px;
+                        border-bottom: 2px solid gold;
+                    }
+                }
+
+                .adsCont {
+                    width: 100%;
+                    height: 20vh;
+                    gap: 10px;
+                    @include displayFlexEvenly;
+
+                    div {
+                        border: 2px solid black;
+                        border-radius: 10px;
+                    }
+
+                    .cont1 {
+                        width: 80%;
+                        height: 80%;
+                        background: url('https://www.vortez.net/contentteller.php?ct=news&action=file&id=18653');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        display: flex;
+                        justify-content: center;
+                        background-position: center;
+                        align-items: center;
+                    }
+
+                    .cont2 {
+                        width: 80%;
+                        height: 80%;
+                        background: url('https://i.pcmag.com/imagery/reviews/05MvZiHAYTFEoBAuxOu0Tcl-12.fit_scale.size_760x427.v1597347810.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-position: center;
+
+                    }
+
+                    .cont3 {
+                        width: 80%;
+                        height: 80%;
+                        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9cHxAaxkUI5BKBHrk-xmZHW85aJEi5MNwaA&s');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-position: center;
+
+                    }
+                }
+
+
+
+            }
+        }
+
+        .rightPl {
+            width: 30%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 10px;
+            .favGames {
+                width: 100%;
+                height: 45vh;
+                background-color: #1b1b1b;
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                border-radius: 10px;
+                border: 2px solid black;
+
+                .title {
+                    width: 98%;
+                    padding: 5px;
+                    background-color: aquamarine;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    height: auto;
+                    @include displayFlexCenter;
+
+                    p {
+                        color: black;
+                        font-family: Lakes;
+                        font-size: 28px;
+                    }
+                }
+
+                .favBody {
+                    width: 100%;
+                    margin-top: 10px;
+                    height: 35vh;
+                    overflow-y: auto;
+                    padding: 5px;
+
+                    .card {
+                        width: 98%;
+                        height: 20vh;
+                        margin-top: 7px;
+                        border-top: 2px solid black;
+                        border-bottom: 2px solid black;
+                        background-color: rgba(61, 61, 61, 0.5);
+                        border-radius: 10px;
+                        margin-bottom: 7px;
+                        @include displayFlexEvenly;
+
+                        .img {
+                            width: 20%;
+                            height: 100px;
+                            @include displayFlexEvenly;
+                            background-size: cover;
+                            background-position: center;
+                            border-radius: 10%;
+                            object-fit: contain;
+                        }
+
+                        .text {
+                            display: flex;
+                            height: 100%;
+                            width: 45%;
+                            text-align: center;
+                            flex-direction: column;
+                            @include displayFlexEvenly;
+
+                            .top {
+                                h5 {
+                                    font-family: Lakes;
+                                    font-size: 20px;
+                                    color: white;
+                                    border-bottom: 2px solid aquamarine;
+                                }
+                            }
+
+                            .bottom {
+                                p {
+                                    font-family: Lakes;
+                                    font-size: 16px;
+                                    color: white;
+                                    position: relative;
+                                    bottom: 20px;
+                                }
+                            }
+                        }
+
+                        .button {
+                            width: 10%;
+                            height: 100%;
+                            @include displayFlexEvenly;
+
+                            button {
+                                padding: 10px;
+                                color: white;
+                                background-color: aquamarine;
+                                border-radius: 5px;
+                                display: flex;
+                                justify-content: center;
+                                box-shadow:
+                                    0 0 2px aquamarine,
+                                    0 0 5.5px aquamarine,
+                                    0 0 12.5px aquamarine,
+                                    0 0 25px aquamarine;
+                                color: black;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .friends {
+                width: 100%;
+                height: 45vh;
+                background-color: #1b1b1b;
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                border-radius: 10px;
+                transform: translateY(-5%);
+                border: 2px solid black;
+
+                .title {
+                    width: 98%;
+                    padding: 5px;
+                    background-color: rgb(236, 168, 22);
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    height: auto;
+                    @include displayFlexCenter;
+
+                    p {
+                        color: black;
+                        font-family: Lakes;
+                        font-size: 28px;
+                    }
+                }
+
+                .partyBody {
+                    width: 100%;
+                    margin-top: 10px;
+                    height: 35vh;
+                    overflow-y: auto;
+                    padding: 5px;
+
+                    .card {
+                        width: 98%;
+                        height: 20vh;
+                        margin-top: 7px;
+                        border-top: 2px solid black;
+                        border-bottom: 2px solid black;
+                        background-color: rgba(61, 61, 61, 0.5);
+                        border-radius: 10px;
+                        margin-bottom: 7px;
+                        @include displayFlexEvenly;
+
+                        .img {
+                            width: 20%;
+                            height: 100px;
+                            @include displayFlexEvenly;
+                            background-size: cover;
+                            background-position: center;
+                            border-radius: 10%;
+                            object-fit: contain;
+                        }
+
+                        .text {
+                            display: flex;
+                            height: 100%;
+                            width: 45%;
+                            text-align: center;
+                            flex-direction: column;
+                            @include displayFlexEvenly;
+
+                            .top {
+                                h5 {
+                                    font-family: Lakes;
+                                    font-size: 20px;
+                                    color: white;
+                                    border-bottom: 2px solid rgb(236, 168, 22);
+                                }
+                            }
+
+                            .bottom {
+                                p {
+                                    font-family: Lakes;
+                                    font-size: 25px;
+                                    color: white;
+                                    position: relative;
+                                    bottom: 30px;
+                                }
+                            }
+                        }
+
+                        .button {
+                            width: 10%;
+                            height: 100%;
+                            @include displayFlexEvenly;
+
+                            button {
+                                padding: 10px;
+                                color: white;
+                                background-color: rgb(236, 168, 22);
+                                border-radius: 5px;
+                                display: flex;
+                                justify-content: center;
+                                box-shadow:
+                                    0 0 2px rgb(236, 168, 22),
+                                    0 0 5.5px rgb(236, 168, 22),
+                                    0 0 12.5px rgb(236, 168, 22),
+                                    0 0 25px rgb(236, 168, 22);
+                                color: black;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .middleSection {
+        width: 100%;
+        height: 100vh;
+        // background: url('../images/bt.png');
+        background-size: cover;
+        @include displayFlexAround;
+
+        .leftSection {
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            .container {
+                width: 40%;
+                height: 50%;
+                background-color: rgba(27, 27, 27, 0.7);
+                position: relative;
+                left: 6.5%;
+                border-radius: 10px;
+            }
+
+            .container_1 {
+                background-color: rgba(0, 0, 255, 0.5);
+
+                img {
+
+                    &:nth-child(1) {
+                        width: 350px;
+                        height: 350px;
+                        position: absolute;
+                        transform: rotate(330deg) translateY(-45%);
+                    }
+
+                    &:nth-child(3) {
+                        width: 300px;
+                        height: 300px;
+                        position: absolute;
+                        transform: translate(70%, -110%);
+                        z-index: 2;
+                    }
+                }
+
+                .text {
+                    width: 60%;
+                    height: 100%;
+                    position: relative;
+                    z-index: 3;
+                    @include displayFlexCenter;
+                    flex-direction: column;
+                    left: 10%;
+
+                    h1 {
+                        font-family: Lakes;
+                        color: white;
+                        border-bottom: 2px solid gold;
+                    }
+
+                    p {
+                        font-family: Lakes;
+                        color: rgb(255, 255, 255);
+                        font-weight: 800;
+                        padding: 5px;
+                        background-color: rgba(0, 0, 255, 0.1);
+                        border-radius: 10px;
+                    }
+
+                    button {
+                        width: 200px;
+                        height: 3vh;
+                        padding: 5px;
+                        @include displayFlexCenter;
+                        font-family: Lakes;
+                        font-size: 22px;
+                        background-color: rgba(0, 0, 255);
+                        border: none;
+                        box-shadow:
+                            0 0 5px rgba(0, 0, 255),
+                            0 0 25px rgba(0, 0, 255),
+                            0 0 50px rgba(0, 0, 255),
+                            0 0 200px rgba(0, 0, 255);
+                        color: white;
+                        margin-top: 10px;
+                        cursor: pointer;
+                        border-radius: 5px;
+                    }
+
+                    button:hover {
+                        transition: 0.3s;
+                        box-shadow: none;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .container_2 {
+                background-color: rgba(50, 224, 15, 0.5);
+
+                img {
+
+                    width: 300px;
+                    height: 300px;
+                    position: absolute;
+                    transform: translate(70%, -110%);
+                    z-index: 2;
+
+                }
+
+                .text {
+                    width: 60%;
+                    height: 100%;
+                    position: relative;
+                    z-index: 3;
+                    @include displayFlexCenter;
+                    flex-direction: column;
+                    left: 4%;
+
+                    h1 {
+                        font-family: Lakes;
+                        color: white;
+                        border-bottom: 2px solid gold;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-family: Lakes;
+                        color: rgb(255, 255, 255);
+                        font-weight: 800;
+                        padding: 5px;
+                        background-color: rgba(50, 224, 15, 0.1);
+                        border-radius: 10px;
+                    }
+
+                    button {
+                        width: 200px;
+                        height: 3vh;
+                        padding: 5px;
+                        @include displayFlexCenter;
+                        font-family: Lakes;
+                        font-size: 22px;
+                        background-color: rgba(50, 224, 15, 0.5);
+                        border: none;
+                        box-shadow:
+                            0 0 5px rgba(50, 224, 15, 0.5),
+                            0 0 25px rgba(50, 224, 15, 0.5),
+                            0 0 50px rgba(50, 224, 15, 0.5),
+                            0 0 200px rgba(50, 224, 15, 0.5);
+                        color: white;
+                        margin-top: 10px;
+                        cursor: pointer;
+                        border-radius: 5px;
+                    }
+
+                    button:hover {
+                        transition: 0.3s;
+                        box-shadow: none;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .container_3 {
+                background-color: rgba(255, 0, 0, 0.5);
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                    position: absolute;
+                    transform: rotate(0deg) translate(80%, -20%);
+                    z-index: 3;
+                }
+
+                .text {
+                    width: 60%;
+                    height: 100%;
+                    position: relative;
+                    z-index: 3;
+                    @include displayFlexCenter;
+                    flex-direction: column;
+                    top: 10px;
+
+                    h1 {
+                        font-family: Lakes;
+                        color: white;
+                        border-bottom: 2px solid gold;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-family: Lakes;
+                        color: rgb(255, 255, 255);
+                        font-weight: 800;
+                        padding: 5px;
+                        background-color: rgba(255, 0, 0, 0.1);
+                        border-radius: 10px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+
+                    button {
+                        width: 200px;
+                        height: 3vh;
+                        padding: 5px;
+                        @include displayFlexCenter;
+                        font-family: Lakes;
+                        font-size: 22px;
+                        background-color: rgba(255, 0, 0);
+                        border: none;
+                        box-shadow:
+                            0 0 5px rgba(255, 0, 0),
+                            0 0 25px rgba(255, 0, 0),
+                            0 0 50px rgba(255, 0, 0),
+                            0 0 200px rgba(255, 0, 0);
+                        color: white;
+                        cursor: pointer;
+                        border-radius: 5px;
+                    }
+
+                    button:hover {
+                        transition: 0.3s;
+                        box-shadow: none;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .container_4 {
+                background-color: rgba(7, 7, 7, 0.5);
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                    position: absolute;
+                    transform: rotate(0deg) translate(90%, 10%);
+                    z-index: 3;
+                }
+
+                .text {
+                    width: 60%;
+                    height: 100%;
+                    position: relative;
+                    z-index: 3;
+                    @include displayFlexCenter;
+                    flex-direction: column;
+                    top: 10px;
+
+                    h1 {
+                        font-family: Lakes;
+                        color: white;
+                        border-bottom: 2px solid gold;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-family: Lakes;
+                        color: rgb(255, 255, 255);
+                        font-weight: 800;
+                        padding: 5px;
+                        background-color: rgba(7, 7, 7, 0.1);
+                        border-radius: 10px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+
+                    button {
+                        width: 200px;
+                        height: 3vh;
+                        padding: 5px;
+                        @include displayFlexCenter;
+                        font-family: Lakes;
+                        font-size: 22px;
+                        background-color: rgba(7, 7, 7);
+                        border: none;
+                        box-shadow:
+                            0 0 5px rgba(7, 7, 7),
+                            0 0 25px rgba(7, 7, 7),
+                            0 0 50px rgba(7, 7, 7),
+                            0 0 200px rgba(7, 7, 7);
+                        color: white;
+                        cursor: pointer;
+                        border-radius: 5px;
+                    }
+
+                    button:hover {
+                        transition: 0.3s;
+                        box-shadow: none;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .rightSection {
+            width: 30%;
+            height: 90vh;
+            position: relative;
+            left: 10px;
+
+            .container {
+                width: 100%;
+                height: 100%;
+                @include displayFlexCenter;
+                gap: 30px;
+                flex-direction: column;
+                background-color: rgba(27, 27, 27, 0.7);
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                .title {
+                    @include displayFlexCenter;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    h1 {
+                        font-family: Lakes;
+                        color: white;
+                        border-bottom: 2px solid gold;
+                    }
+
+                    p {
+                        font-family: Lakes;
+                        color: white;
+                        font-size: 20px;
+                        padding: 10px;
+                        background-color: rgba(27, 27, 27, 0.1);
+                    }
+                }
+
+                button {
+                    width: 200px;
+                    height: 5vh;
+                    padding: 5px;
+                    @include displayFlexCenter;
+                    color: white;
+                    background-color: rgba(7, 7, 7);
+                    border: none;
+                    font-family: Lakes;
+                    font-size: 24px;
+                    box-shadow:
+                        0 0 5px rgba(7, 7, 7),
+                        0 0 25px rgba(7, 7, 7),
+                        0 0 50px rgba(7, 7, 7),
+                        0 0 200px rgba(7, 7, 7);
+                }
+            }
+        }
+    }
+
+
+
+    .contactSection {
+        width: 100%;
+        height: 100vh;
+
+        .character {
+            position: absolute;
+            transform: translateX(-700px);
+            transition: transform 0.5s ease;
+            width: 700px;
+            height: auto;
+            display: flex;
+
+            img {
+                width: 550px;
+                height: 550px;
+                transform: rotate(15deg) translateY(100px);
+            }
+
+            .text {
+                position: absolute;
+                transform: translateX(520px) translateY(120px);
+                width: 250px;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                // background-color: black;
+                background: url('https://clipart-library.com/2023/text-box-png-27.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                p {
+                    color: black;
+                    font-family: Lakes;
+                    transform: translate(-5%, -100%);
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .contactForm {
+            width: 100%;
+            height: 100%;
+            @include displayFlexCenter;
+
+            form {
+                width: 45%;
+                height: 600px;
+                padding: 10px;
+                border-radius: 10px;
+                position: relative;
+                left: 15%;
+                @include displayFlexCenter;
+                background-color: rgba(0, 0, 0, 0.6);
+                flex-direction: column;
+                gap: 20px;
+
+                h1 {
+                    color: white;
+                    font-family: Lakes;
+                    font-size: 32px;
+                    border-bottom: 2px solid gold;
+                }
+
+                input {
+                    width: 400px;
+                    padding: 10px;
+                    background-color: #1b1b1b;
+                    color: white;
+                    font-family: Lakes;
+                    border: 2px solid black;
+                    border-radius: 3px;
+                    font-size: 18px;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &::placeholder {
+                        font-family: Lakes;
+                        color: white;
+                    }
+                }
+
+                textarea {
+                    width: 400px;
+                    height: 200px;
+                    background-color: #1b1b1b;
+                    color: white;
+                    font-family: Lakes;
+                    border: 2px solid black;
+                    border-radius: 3px;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &::placeholder {
+                        font-family: Lakes;
+                        color: white;
+                    }
+                }
+
+                button {
+                    width: 200px;
+                    padding: 5px;
+                    background-color: #1b1b1b;
+                    color: white;
+                    font-family: Lakes;
+                    font-size: 22px;
+                    border: 2px solid black;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

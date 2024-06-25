@@ -1,0 +1,109 @@
+.navbar {
+    position: absolute;
+    width: 95%;
+    height: 10vh;
+    @include displayFlexAround;
+    z-index: 2;
+    .leftSection {
+        width: 50%;
+        position: relative;
+        left: 5%;
+
+        .searchSect {
+            width: 30%;
+            padding: 5px;
+            background-color: rgb(54, 53, 53);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+
+            input {
+                padding: 5px;
+                width: 90%;
+                background-color: transparent;
+                border: none;
+                color: white;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            input::placeholder {
+                color: white;
+                font-family: Lakes;
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+
+            button {
+                padding: 5px;
+                border: none;
+                background-color: transparent;
+                color: white;
+            }
+        }
+    }
+
+    .rightSection {
+        position: relative;
+        left: 10%;
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            color: white;
+            padding: 2px;
+            @include displayFlexCenter;
+            font-size: 20px;
+            background-color: rgb(54, 53, 53);
+            border-radius: 5px;
+            box-shadow:
+                0 0 5px rgb(54, 53, 53),
+                0 0 25px rgb(54, 53, 53),
+                0 0 50px rgb(54, 53, 53),
+                0 0 200px rgb(54, 53, 53);
+        }
+
+        button {
+            padding: 7px;
+            background-color: transparent;
+            color: white;
+            border: none;
+            @include displayFlexCenter;
+            font-size: 20px;
+            background-color: rgb(54, 53, 53);
+            border-radius: 5px;
+            box-shadow:
+                0 0 5px rgb(54, 53, 53),
+                0 0 25px rgb(54, 53, 53),
+                0 0 50px rgb(54, 53, 53),
+                0 0 200px rgb(54, 53, 53);
+            font-family:Lakes;
+            font-size: 25px;
+        }
+
+        .not{
+            background-color: red;
+            padding: 2px;
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            border-radius: 50%;
+            @include displayFlexCenter;
+            box-shadow:
+                0 0 5px red,
+                0 0 25px red,
+                0 0 50px red,
+                0 0 200px red;
+            transform: translate(60%,-80%);
+            font-family: Lakes;
+            font-size: 15px;
+        }
+    }
+
+}

@@ -1,0 +1,30 @@
+
+$main-color: #1d1c1c;
+$sub-color:#DE3C4B;
+$element-color:#ef123e;
+$otherElement-color:#111111;
+
+@mixin displayFlexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin displayFlexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin displayFlexAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin displayFlexEvenly{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+

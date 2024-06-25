@@ -1,0 +1,97 @@
+@import 'mixin';
+
+.userSection{
+    width: 100%;
+    height: auto;
+    @include displayFlexCenter;
+    .container{
+        margin-top: 100px;
+        transform: translateX(50px);
+        width: 75vw;
+        padding: 5px;
+        height: auto;
+        background-color: rgba(0, 0, 0,0.6);
+        border-radius: 10px;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        
+        .userInf{
+            width: 100%;
+            height: 80vh;
+            @include displayFlexBetween;
+            
+            .left{
+                width: 50%;
+                height: 80%;
+                position: relative;
+                left: 5px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+
+            .right{
+                display: flex;
+                justify-content: center;                
+                gap: 10px;
+                flex-direction: column;
+                width: 40%;
+                height: 80%;
+                h1{
+                    color: white;
+                    font-family: Lakes;
+                    display: flex;
+                    align-items: center;
+
+                    span{
+                        position: relative;
+                        left: 10px;
+                    }
+                }
+                form{
+                    display: flex;
+                    gap: 10px;
+                    input{
+                        width: 200px;
+                        padding: 5px;
+                        background-color: black;
+                        border-radius: 5px;
+                        border: 2px solid white;
+                        font-family: Lakes;
+                        color: white;
+                        &::placeholder{
+                            font-family: Lakes;
+                            color: grey;
+                            font-size: 20px;
+                        }
+    
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    button{
+                        padding: 5px;
+                        border-radius: none;
+                        width: 45px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+
+        .achievments{
+            width: 100%;
+            height: auto;
+        }
+
+        .buyedGames{
+            width: 100%;
+            height: auto;
+        }
+
+    }
+}

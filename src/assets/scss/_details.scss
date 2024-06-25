@@ -1,0 +1,312 @@
+@import 'mixin';
+
+.prDetailsSection {
+    width: 85vw;
+    height: auto;
+
+    @include displayFlexCenter;
+    flex-direction: column;
+
+    .container {
+        width: 100%;
+        height: 80vh;
+        background-color: rgba(0, 0, 0, 0.75);
+        margin-top: 10%;
+        position: relative;
+        left: 13.3%;
+        top: 5%;
+        border-radius: 5px;
+        @include displayFlexAround;
+
+        .left {
+            width: 40%;
+            height: auto;
+
+            .mainImg {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+
+            .sliderSec {
+                width: 100%;
+                height: auto;
+
+                margin-top: 20px;
+
+                .sliderImageContainer {
+                    display: flex !important;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+
+                    .sliderImage {
+                        width: 250px;
+                        /* Задайте нужную ширину */
+                        height: 120px;
+                        /* Задайте нужную высоту */
+                        object-fit: cover;
+                        /* Позволяет изображению заполнить контейнер, сохраняя соотношение сторон */
+                        border-radius: 8px;
+                        /* Добавляет скругленные углы, если нужно */
+                    }
+                }
+            }
+
+        }
+
+        .right {
+            width: 50%;
+            height: auto;
+
+            .genres {
+                width: 100%;
+                height: auto;
+                display: flex;
+                position: absolute;
+                top: 120px;
+
+                .types {
+                    width: 90%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    gap: 40px;
+                    flex-wrap: wrap;
+
+                    .genreBox {
+                        background-color: rgb(234, 172, 15);
+                        box-shadow:
+                            0 0 1px rgb(234, 172, 15),
+                            0 0 2.5px rgb(234, 172, 15),
+                            0 0 4px rgb(234, 172, 15),
+                            0 0 50px rgb(234, 172, 15);
+                        padding: 5px;
+                        width: 75px;
+                        height: 20px;
+                        @include displayFlexCenter;
+                        border-radius: 5px;
+
+                        h5 {
+                            color: white;
+                            font-size: 20px;
+                            font-family: Lakes;
+                            font-weight: 900;
+                            text-shadow: 2px 0px 2px black;
+                        }
+                    }
+                }
+            }
+
+            .tit {
+                width: 100%;
+                height: auto;
+                padding: 5px;
+                @include displayFlexCenter;
+                border-bottom: 2px solid goldenrod;
+
+                h1 {
+                    color: white;
+                    font-family: Lakes;
+                    font-size: 32px;
+                }
+            }
+
+            .desc {
+                width: 100%;
+                height: auto;
+                margin-top: 20px;
+
+                p {
+                    color: white;
+                    font-family: Lakes;
+                    font-size: 22px;
+                }
+            }
+
+            .price {
+                width: 30%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                position: relative;
+                top: 55px;
+
+                h4,
+                h3 {
+                    color: white;
+                    font-family: Lakes;
+                }
+
+                h4 {
+                    font-size: 25px;
+                }
+
+                .strikethrough {
+                    text-decoration: line-through 3px red;
+                }
+
+                h3 {
+                    font-size: 28px;
+                }
+            }
+
+            .buttonSect {
+                width: 100%;
+                height: auto;
+                position: relative;
+                top: 150px;
+
+                button {
+                    width: 100%;
+                    height: 30px;
+                    padding: 5px;
+                    background-color: goldenrod;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 23px;
+                    @include displayFlexCenter;
+                }
+            }
+        }
+    }
+
+    .settingCont {
+        width: 100%;
+        height: 40vh;
+        @include displayFlexAround;
+        position: relative;
+        left: 13.3%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+        .left,
+        .right {
+            width: 40%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            padding: 5px;
+
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                color: white;
+                font-family: Lakes;
+                border-bottom: 2px solid goldenrod;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li {
+                    font-family: Lakes;
+                    color: white;
+                    font-size: 32px;
+                }
+            }
+        }
+
+    }
+
+    .video{
+        width: 75vw;
+        height: auto;
+        margin-top: 20px;
+        padding: 10px;
+        transform: translateX(15%);
+        @include displayFlexCenter;
+    }
+
+    .dlc {
+        margin-top: 20px;
+        @include displayFlexCenter;
+        flex-direction: column;
+        transform: translateX(5%);
+        #dl{
+            font-size: 30px;
+            color: white;
+            font-family: Lakes;
+            border-bottom: 2px solid goldenrod;
+        }
+        .dlcSection {
+            width: auto;
+            height: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            
+            .dlcItem {
+                @include displayFlexBetween;
+                gap: 20px;
+                background-color: rgba(0, 0, 0,0.8);
+                border-radius: 5px;
+                padding: 5px;
+                width: 60vw;
+
+                .inf {
+                    width: 600px;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    h3,
+                    p {
+                        color: white;
+                        font-family: Lakes;
+                    }
+
+                    button {
+                        width: 300px;
+                        height: 30px;
+                        padding: 5px;
+                        background-color: goldenrod;
+                        color: black;
+                        font-family: Lakes;
+                        font-size: 22px;
+                        @include displayFlexCenter;
+                        border: none;
+                        border-radius: 5px;
+                        position: relative;
+
+                        right: 8px;
+                    }
+
+                    .desc {
+                        font-size: 12px;
+                    }
+
+
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.slideImageV{
+    width: 1400px;
+    height: 800px;
+    @include displayFlexCenter;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border: 2px solid white;
+        border-radius: 5px;
+        transform: translateX(2%) translateY(1%);
+    }
+}
+
+#bundDs{
+    display: flex;
+    flex-direction:column ;
+}

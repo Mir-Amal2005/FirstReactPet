@@ -1,0 +1,452 @@
+@import 'mixin';
+
+.marketplaceSection {
+    width: 100%;
+    height: auto;
+    @include displayFlexCenter;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    left: 26px;
+
+    .topSection {
+        width: 90vw;
+        height: 45vh;
+        padding: 5px;
+        text-align: center;
+        background: url('../images/bluredTop.png');
+        background-size: cover;
+        background-position: center;
+        @include displayFlexCenter;
+        flex-direction: column;
+        margin-top: 90px;
+        border-radius: 5px;
+        position: relative;
+        left:41px;
+
+        .text-box {
+            width: auto;
+            height: auto;
+            padding: 2px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: relative;
+            bottom: 60px;
+            border-radius: 10px;
+
+            h1 {
+                font-family: SaboFil;
+                padding: 5px;
+                letter-spacing: 2px;
+                font-size: 38px;
+                text-shadow: 2px 2px 2px transparent;
+                font-weight: 900;
+
+                background: linear-gradient(90deg, #e933ff, #ffb400, #ff3333, #334dff, #e933ff);
+                background-size: 200% auto;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: textflow 5s linear infinite;
+            }
+        }
+
+
+        img {
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    .hottest {
+        width: 80vw;
+        border-radius: 5px;
+        height: 60vh;
+        padding: 5px;
+        background: url('../images/street.png');
+        background-size: cover;
+        @include displayFlexCenter;
+        margin-top: 30px;
+    }
+
+    .bundles {
+        width: 70vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 50px;
+
+        .top {
+            width: 100%;
+            @include displayFlexBetween;
+            height: 5vh;
+
+            .title {
+                width: 100px;
+                height: 3vh;
+                padding: 5px;
+                border-radius: 5px;
+                @include displayFlexCenter;
+                background-color: rgb(234, 172, 15);
+                box-shadow:
+                    0 0 5px rgb(234, 172, 15),
+                    0 0 15px rgb(234, 172, 15),
+                    0 0 20px rgb(234, 172, 15),
+                    0 0 100px rgb(234, 172, 15);
+
+                h1 {
+                    color: white;
+                    font-family: Lakes;
+                    text-transform: uppercase;
+                    text-shadow: 2px 0px 2px black;
+                }
+            }
+
+            .seeMore {
+                a {
+                    color: goldenrod;
+                    font-family: Lakes;
+                    border-bottom: 2px solid goldenrod;
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .choose {
+            width: 100%;
+            height: 30vh;
+            @include displayFlexAround;
+        }
+    }
+
+    .adv{
+        display: flex;
+        gap: 20px;
+    }
+
+    .mainShop{
+        width: 80vw;
+        height: auto;
+
+        .top{
+            width: 100%;
+            height: 10vh;
+            @include displayFlexCenter;
+            gap: 20px;
+            background-color: rgba(0, 0, 0,0.6);
+            border-radius: 5px;
+            padding: 5px;
+            
+            h1{
+                font-family: Lakes;
+                font-size: 40px;
+                letter-spacing: 2px;
+                border-bottom: 2px solid goldenrod;
+                padding: 2px;
+                color: white;
+            }
+            .settings{
+                width: 50px;
+                height: 5vh;
+                font-size: 32px;
+                font-family: Lakes;
+                background-color: black;
+                border-radius: 5px;
+                border: 2px solid white;
+                color: white;
+                @include displayFlexCenter;
+                cursor: pointer;
+            }
+        }
+
+        .vgGames{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            .title{
+                width: 100%;
+                height: 5vh;
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                h1{
+                    color: white;
+                    font-size: 36px;
+                    font-family: Lakes;
+                    border-bottom: 2px solid goldenrod;
+                    padding: 5px;
+                }
+
+                button{
+                    padding: 2px;
+                    background-color: transparent;
+                    border: none;
+
+                    color: goldenrod;
+                    border-bottom: 2px solid goldenrod;
+                    font-family: Lakes;
+                    font-size: 18px;
+                    cursor: pointer;
+
+                    
+                }
+
+            }
+
+            .gamess{
+                width: 100%;
+                height: auto;
+                display: flex;
+                margin: 20px 0px 0px 20px;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                
+            }
+        }
+    }
+
+    .giftCards {
+        width: 80vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        .top {
+            width: 100%;
+            @include displayFlexBetween;
+            height: 5vh;
+            margin-bottom: 20px;
+            .title {
+                width: 100px;
+                height: 3vh;
+                padding: 5px;
+                border-radius: 5px;
+                @include displayFlexCenter;
+                background-color: rgb(234, 172, 15);
+                box-shadow:
+                    0 0 5px rgb(234, 172, 15),
+                    0 0 15px rgb(234, 172, 15),
+                    0 0 20px rgb(234, 172, 15),
+                    0 0 100px rgb(234, 172, 15);
+
+                h1 {
+                    color: white;
+                    font-family: Lakes;
+                    text-transform: uppercase;
+                    text-shadow: 2px 0px 2px black;
+                    font-size: 18px;
+                }
+            }
+
+            .seeMore {
+                a {
+                    color: goldenrod;
+                    font-family: Lakes;
+                    border-bottom: 2px solid goldenrod;
+                    font-size: 22px;
+                }
+            }
+        }
+        .slideI {
+            width: 50px;
+            height: 400px;
+            padding: 5px;
+
+            img {
+                width: 90%;
+                height: 85%;
+                object-fit: cover;
+                object-position: bottom center;
+                border-radius: 5px;
+            }
+
+            .btSec {
+                width: 100%;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                h3 {
+                    color: white;
+                    font-family: Lakes;
+                    font-size: 32px;
+                }
+
+                .btn {
+                    width: 80%;
+                height: 300px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    button {
+                        width: 200px;
+                        height: 20px;
+                        @include displayFlexCenter;
+                        padding: 5px;
+                        background-color: rgb(234, 172, 15);
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.seeVgGames{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    .title{
+        width: 100%;
+        height: 5vh;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        h1{
+            color: white;
+            font-size: 36px;
+            font-family: Lakes;
+            border-bottom: 2px solid goldenrod;
+            padding: 5px;
+        }
+
+        button{
+            padding: 2px;
+            background-color: transparent;
+            border: none;
+
+            color: goldenrod;
+            border-bottom: 2px solid goldenrod;
+            font-family: Lakes;
+            font-size: 18px;
+            cursor: pointer;
+
+            
+        }
+
+    }
+
+    .Segamess{
+        width: 100%;
+        height: auto;
+        display: flex!important;
+        margin: 20px 0px 0px 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .item_card {
+            width: 20vw;
+            height: auto;
+            padding: 5px;
+            background: url('../images/ss.png');
+            background-position: center;
+            background-size: cover;
+        
+            .topItem {
+                width: 100%;
+                height: auto;
+        
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    border-radius: 5px;
+                }
+            }
+        
+            .bottomItem {
+                padding: 5px;
+                background-color: rgba(0, 0, 0,0.7);
+                height: auto;
+                width: 100%;
+                position: relative;
+                left: -5px;
+                h6,
+                h4,
+                h5,
+                p {
+                    color: white;
+                    font-family: Lakes;
+                }
+        
+                .genre{
+                    width: 100%;
+                    display: flex;
+                    padding: 5px;
+                    border-radius: 5px;
+                    position: relative;
+                    left: -5px;
+                    justify-content: space-evenly;
+                    h5{
+                        width: 10%;
+                    }
+                    div{
+                        display: flex;
+                        justify-content: space-evenly;
+                        width: 80%;
+                        height: auto;
+                        flex-wrap: wrap;
+        
+                        .genreBox{
+                            width: 20%;
+                            height: auto;
+        
+                            h5{
+                                color: goldenrod;
+                            }
+                            
+                           
+                        }
+                    }
+                }
+        
+                .buttons{
+                    width: 100%;
+                    @include displayFlexAround;
+        
+                    button{
+                        width: 30%;
+                        background-color: goldenrod;
+                        font-family: Lakes;
+                        font-size: 20px;
+                        border-radius: 5px;
+                        border: none;
+        
+                        a{
+                            color: white;
+                            font-family: Lakes;
+                            font-size: 20px;
+                            text-shadow: 2px 0px 2px black;
+                        }
+                    }
+                }
+            }
+        
+        }
+        
+    }
+}
+
+
+@keyframes textflow {
+    from {
+        background-position: 0% center
+    }
+
+    to {
+        background-position: 200% center
+    }
+}

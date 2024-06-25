@@ -1,0 +1,391 @@
+@import 'mixin';
+
+
+.hot_card {
+    width: 80vw;
+    height: 60vh;
+    padding: 5px;
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+
+
+
+    @include displayFlexBetween;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        position: relative;
+        left: 60px;
+
+        .hot_gamesPhoto {
+            transform: translateY(2%);
+            width: 500px;
+            height: 500px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 5px;
+
+            .discount {
+                position: absolute;
+                background-color: white;
+                padding: 2px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                @include displayFlexCenter;
+                transform: translate(10px, 120px);
+                border: 2px solid black;
+
+                h5 {
+                    font-family: Lakes;
+                    color: red;
+                }
+            }
+        }
+
+        .hotTitle {
+            width: 150px;
+            height: 30px;
+            padding: 2px;
+            @include displayFlexCenter;
+            border-radius: 5px;
+            position: absolute;
+
+            background-color: rgb(234, 172, 15);
+            box-shadow:
+                0 0 1px rgb(234, 172, 15),
+                0 0 2.5px rgb(234, 172, 15),
+                0 0 4px rgb(234, 172, 15),
+                0 0 25px rgb(234, 172, 15);
+
+            h1 {
+                color: white;
+                font-weight: 900;
+                font-family: Lakes;
+                text-shadow: 2px 0px 2px black;
+                letter-spacing: 2px;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .right {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .genres {
+            width: 300px;
+            @include displayFlexAround;
+            gap: 20px;
+
+            .genreBox {
+                width: auto;
+                height: auto;
+                padding: 5px;
+                border-radius: 5px;
+                background-color: rgb(234, 172, 15);
+                box-shadow:
+                    0 0 1px rgb(234, 172, 15),
+                    0 0 2.5px rgb(234, 172, 15),
+                    0 0 4px rgb(234, 172, 15),
+                    0 0 25px rgb(234, 172, 15);
+
+                h5 {
+                    color: white;
+                    font-family: SaboFil;
+                    letter-spacing: 2px;
+                    font-weight: 900;
+                    text-shadow: 2px 0px 2px black;
+                }
+            }
+        }
+
+        .title {
+            width: auto;
+            height: auto;
+
+            h1 {
+                font-family: Lakes;
+                color: white;
+                font-size: 40px;
+            }
+        }
+
+        .stars {
+            width: auto;
+            height: auto;
+
+            ul {
+                display: flex;
+                gap: 2px;
+
+                li {
+                    color: goldenrod;
+                }
+            }
+        }
+
+        .description {
+            width: 500px;
+            height: 70px;
+
+            p {
+                color: white;
+                font-family: Lakes;
+                font-size: 18px;
+            }
+        }
+
+        .prices {
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+
+            h6,
+            h4 {
+                font-family: Lakes;
+            }
+
+            h6 {
+                text-decoration: line-through red;
+                font-size: 22px;
+            }
+
+            h4 {
+                font-size: 26px;
+            }
+        }
+
+        .buttonSection {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 20px;
+
+            button {
+                width: 150px;
+                height: 40px;
+                padding: 10px;
+
+                background-color: rgb(234, 172, 15);
+                border-radius: 5px;
+                color: white;
+                border: 1px solid black;
+                @include displayFlexCenter;
+
+                a,
+                svg {
+                    color: white;
+                    font-family: Lakes;
+                    font-weight: 900;
+                    font-size: 22px;
+                    text-shadow: 2px 0px 2px black;
+
+                }
+
+                svg {
+                    color: black;
+                }
+            }
+        }
+    }
+
+}
+
+.bundleCard {
+    width: 350px;
+    height: 350px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.75);
+
+    .title {
+        width: 350px;
+        height: 55px;
+        @include displayFlexCenter;
+        padding: 6px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transform: translate(-6px, -5.5px);
+
+        h1 {
+            color: white;
+            font-family: Lakes;
+            text-transform: uppercase;
+            font-size: 24px;
+            text-align: center;
+            border-bottom: 2px solid goldenrod;
+            font-weight: 900;
+            text-shadow: 2px 0px 2px black;
+        }
+    }
+
+    .bundlePhoto {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        border-radius: 5px;
+        border: 2px solid black;
+        margin-top: 10px;
+    }
+
+    .buyIt {
+        width: 353px;
+        height: 50px;
+        @include displayFlexAround;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 5px;
+        transform: translate(-6px, 16px);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+
+
+        h5 {
+            color: white;
+            font-family: Lakes;
+            font-size: 36px;
+        }
+
+        .buttonSect {
+            display: flex;
+            gap: 10px;
+
+            button {
+                padding: 5px;
+                width: 30px;
+                height: 30px;
+                @include displayFlexCenter;
+                background-color: rgb(234, 172, 15);
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                a{
+                    color: black;
+                }
+                &:hover {
+                    transition: 0.3s;
+                    box-shadow:
+                        0 0 5px rgb(234, 172, 15),
+                        0 0 15px rgb(234, 172, 15),
+                        0 0 20px rgb(234, 172, 15),
+                        0 0 100px rgb(234, 172, 15);
+                    color: white;
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+.item_cardd {
+    width: 20vw;
+    height: auto;
+    padding: 5px;
+    background: url('../images/ss.png');
+    background-position: center;
+    background-size: cover;
+
+    .topItem {
+        width: 100%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+    }
+
+    .bottomItem {
+        padding: 5px;
+        background-color: rgba(0, 0, 0,0.7);
+        height: auto;
+        width: 100%;
+        position: relative;
+        left: -5px;
+        h6,
+        h4,
+        h5,
+        p {
+            color: white;
+            font-family: Lakes;
+        }
+
+        .genre{
+            width: 100%;
+            display: flex;
+            padding: 5px;
+            border-radius: 5px;
+            position: relative;
+            left: -5px;
+            justify-content: space-evenly;
+            h5{
+                width: 10%;
+            }
+            div{
+                display: flex;
+                justify-content: space-evenly;
+                width: 80%;
+                height: auto;
+                flex-wrap: wrap;
+
+                .genreBox{
+                    width: 20%;
+                    height: auto;
+
+                    h5{
+                        color: goldenrod;
+                    }
+                    
+                   
+                }
+            }
+        }
+
+        .buttons{
+            width: 100%;
+            @include displayFlexAround;
+
+            button{
+                width: 30%;
+                background-color: goldenrod;
+                font-family: Lakes;
+                font-size: 20px;
+                border-radius: 5px;
+                border: none;
+
+                a{
+                    color: white;
+                    font-family: Lakes;
+                    font-size: 20px;
+                    text-shadow: 2px 0px 2px black;
+                }
+            }
+        }
+    }
+
+}

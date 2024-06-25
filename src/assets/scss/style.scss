@@ -1,0 +1,37 @@
+
+@import 'mixin';
+
+*,body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    background: url('../images/bg3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+@import 'fonts';
+@import 'mixin';
+@import 'home';
+@import 'side';
+@import 'navbar';
+@import 'blog';
+@import 'disc';
+@import 'logreg';
+@import 'userpage';
+@import 'singleCard';
+@import 'marketplace';
+@import 'details';

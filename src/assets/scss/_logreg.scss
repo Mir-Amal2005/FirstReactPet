@@ -1,0 +1,257 @@
+@import 'mixin';
+
+.loginSection {
+    width: 100%;
+    height: 100vh;
+    @include displayFlexCenter;
+
+    .sec {
+        width: 70vw;
+        height: auto;
+        @include displayFlexCenter;
+        flex-direction: column;
+        margin-top: 5%;
+        
+
+        .container {
+            width: 65%;
+            border-radius: 10px;
+            height: 70vh;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.75);
+            @include displayFlexCenter;
+            flex-direction: column;
+
+            .title {
+                h1 {
+                    color: white;
+                    font-family: Lakes;
+                    font-size: 32px;
+                    transform: translateY(-100%);
+
+                }
+            }
+
+            .inpSec {
+                @include displayFlexCenter;
+                flex-direction: column;
+                margin: 10px 0px 5px 0px;
+
+                label {
+                    color: white;
+                    font-family: Lakes;
+                    border-bottom: 2px solid goldenrod;
+                    margin-bottom: 15px;
+                    font-size: 24px;
+                }
+
+                input {
+                    background-color: black;
+                    color: white;
+                    font-family: Lakes;
+                    padding: 5px;
+                    border: 2px solid white;
+                    border-radius: 5px;
+                    font-size: 18px;
+                    width: 300px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .pass {
+                    @include displayFlexCenter;
+                    background-color: black;
+                    border-radius: 5px;
+                    border: 2px solid white;
+                    padding: 5px;
+
+                    input {
+                        border: none;
+                        background-color: none;
+                    }
+
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        color: white;
+                    }
+                }
+
+                #loginBtn {
+                    padding: 5px;
+                    width: 100px;
+                    color: white;
+                    background-color: black;
+                    font-family: Lakes;
+                    @include displayFlexCenter;
+                    font-size: 18px;
+                    margin-top: 20px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+
+                .links {
+                    @include displayFlexAround;
+                    width: 300px;
+
+                    a {
+                        color: grey;
+                        font-family: Lakes;
+                        font-size: 18px;
+
+                        &:hover {
+                            transition: 0.3s;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.registerSection {
+    width: 100%;
+    height: 100vh;
+    @include displayFlexCenter;
+
+    .sec {
+        width: 70vw;
+        height: auto;
+        @include displayFlexCenter;
+        flex-direction: column;
+        margin-top: 5%;
+        
+
+        .container {
+            width: 65%;
+            border-radius: 10px;
+            height: 70vh;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.75);
+            @include displayFlexCenter;
+            flex-direction: column;
+
+            .title {
+                h1 {
+                    color: white;
+                    font-family: Lakes;
+                    font-size: 32px;
+                    transform: translateY(-100%);
+
+                }
+            }
+
+            .inpSec {
+                @include displayFlexCenter;
+                flex-direction: column;
+                margin: 10px 0px 5px 0px;
+
+                label {
+                    color: white;
+                    font-family: Lakes;
+                    border-bottom: 2px solid goldenrod;
+                    margin-bottom: 15px;
+                    font-size: 24px;
+                }
+
+                input {
+                    background-color: black;
+                    color: white;
+                    font-family: Lakes;
+                    padding: 5px;
+                    border: 2px solid white;
+                    border-radius: 5px;
+                    font-size: 18px;
+                    width: 300px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .pass {
+                    @include displayFlexCenter;
+                    background-color: black;
+                    border-radius: 5px;
+                    border: 2px solid white;
+                    padding: 5px;
+
+                    input {
+                        border: none;
+                        background-color: none;
+                    }
+
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        color: white;
+                    }
+                }
+
+                #loginBtn {
+                    padding: 5px;
+                    width: 100px;
+                    color: white;
+                    background-color: black;
+                    font-family: Lakes;
+                    @include displayFlexCenter;
+                    font-size: 18px;
+                    margin-top: 20px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+
+                .links {
+                    @include displayFlexAround;
+                    width: 300px;
+
+                    a {
+                        color: grey;
+                        font-family: Lakes;
+                        font-size: 18px;
+
+                        &:hover {
+                            transition: 0.3s;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            #genderYear{
+                width: 300px;
+                @include displayFlexBetween;
+                flex-direction: row;
+                margin-top: 30px;
+                .left{
+                    width: 40%;
+                    select{
+                        padding: 5px;
+                        background-color: black;
+                        color: white;
+                        font-family: Lakes;
+                        width: 100px;
+                        border: 2px solid white;
+                        font-size: 18px;
+                        border-radius: 5px;
+
+                        option{
+                            font-family: Lakes!important;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .right{
+                    width: 30%;
+                    transform: translateX(17px);
+                    input{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

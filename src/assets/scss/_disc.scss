@@ -1,0 +1,439 @@
+@import 'mixin';
+
+.discusSection {
+    width: 100%;
+    height: auto;
+
+    .cont {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: 20px;
+        @include displayFlexEvenly;
+        margin-top: 5%;
+
+        .main {
+            width: 65vw;
+            height: auto;
+            position: relative;
+            right: 7%;
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            .card {
+                width: 500px;
+                height: auto;
+                background-color: black;
+                padding: 10px;
+                border-radius: 10px;
+                border: 2px solid white;
+
+                .card-title {
+                    width: 100%;
+                    height: 50px;
+                    padding: 5px;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+
+                    p {
+                        color: white;
+                        font-family: Lakes;
+                        font-size: 18px;
+                    }
+
+                    #time {
+                        color: grey;
+                        font-size: 14px;
+                    }
+                }
+
+                .card-image {
+                    width: 100%;
+                    height: 500px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+                .card-body {
+                    border-top: 2px solid white;
+                    margin-top: 10px;
+                   
+                    .icons {
+                        width: 20%;
+                        @include displayFlexAround;
+                        margin-top: 10px;
+
+                        button {
+                            border: none;
+                            background-color: transparent;
+                            color: white;
+                            width: 20px;
+                            height: 20px;
+
+                            svg {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+
+                    .likes {
+                        margin-top: 20px;
+                        position: relative;
+                        left: 12px;
+
+                        p {
+                            color: white;
+                            font-family: Lakes;
+                            font-size: 24px;
+                        }
+                    }
+
+                    .descrp {
+                        margin-top: 10px;
+
+                        p {
+                            color: white;
+                            font-family: Lakes;
+                            font-size: 22px;
+                            position: relative;
+                            left: 12px;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .sideRec {
+            width: 20vw;
+            height: 40vh;
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 5px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            margin-top: 150px;
+            transform: translateX(-10%);
+            border: 2px solid white;
+
+            display: flex;
+            flex-direction: column;
+
+            .topC{
+                width: 100%;
+                height: 6vh;
+                border-bottom: 2px solid white;
+                padding: 1px;
+                @include displayFlexEvenly;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+
+                p{
+                    color: white;
+                    font-family: Lakes;
+                    font-size: 22px;
+                }
+
+                button{
+                    padding: 5px;
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid white;
+                    border-radius: 5px;
+                    color: white;
+                    background-color: black;
+                    font-size: 20px;
+                    @include displayFlexCenter;
+                    cursor: pointer;
+                }
+            }
+
+            .bodyC{
+                width: 100%;
+                height: 30vh;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                .title{
+                    margin-top: 5px;
+                    transform: translateX(5px);
+                    h1{
+                        color: white;
+                        font-family: Lakes;
+                        font-size: 20px;
+                    }
+                }
+                .userCard{
+                    width: 97%;
+                    height: 10vh;
+                    @include displayFlexEvenly;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+
+                    p{
+                        color: white;
+                        text-align: center;
+                        font-family: Lakes;
+
+                        &:nth-child(1){
+                            font-size: 20px;
+                        }
+
+                        &:nth-child(2){
+                            font-size: 16px;
+                        }
+                    }
+
+                    button{
+                        padding: 5px;
+                        color: white;
+                        font-size: 15px;
+                        background-color: black;
+                        border-radius: 5px;
+                        border: 2px solid white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.swal2-modal {
+    width: 90vw;
+    height: 95vh;
+    background-color: black;
+    border: 2px solid white;
+
+    .modal-container {
+        width: 100%;
+        height: 100%;
+        @include displayFlexAround;
+        overflow-y: hidden;
+
+        .image-section {
+            width: 45%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            .userInput {
+                margin-top: 20px;
+                width: 97%;
+                height: auto;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 15px;
+                @include displayFlexCenter;
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-top: 10px;
+                }
+
+                input[type="text"] {
+                    padding: 5px;
+                    color: white;
+
+                    border: none;
+                    border-bottom: 2px solid white;
+                    width: 400px;
+                    background-color: transparent;
+                    font-family: Lakes;
+                    font-size: 18px;
+                    margin-top: 10px;
+
+                    &::placeholder {
+                        font-family: Lakes;
+                        font-size: 18px;
+                    }
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+
+                button{
+                    margin-top: 10px;
+                    transform: translateX(10%) translateY(10%);
+                    padding: 3px;
+                    width: 30px;
+                    height: 30px;
+                    color: white;
+                    border: 2px solid white;
+                    background-color: black;
+                    font-family: Lakes;
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+        }
+
+        .comments-section {
+            width: 45%;
+            height: 100%;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            right: 10px;
+            overflow-y: auto;
+            .weSec {
+                width: 100%;
+                height: 50px;
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: white;
+                border-bottom: 1px solid white;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+
+                p {
+                    color: white;
+                    font-family: Lakes;
+                    font-size: 18px;
+                }
+            }
+
+            .userComment {
+                display: flex;
+                width: 97%;
+                padding: 5px;
+                height: auto;
+                flex-direction: column;
+                gap: 40px;
+                margin-top: 10px;
+                border: 2px solid white;
+                border-radius: 5px;
+
+                .userCommentBody {
+                    width: 100%;
+                    height: auto;
+                    @include displayFlexCenter;
+                    gap: 30px;
+                   
+                    .userCommentImage {
+                        width: 20%;
+                        height: auto;
+                        flex-direction: column;
+                        text-align: center;
+                        @include displayFlexCenter;
+                        padding: 2px;
+                        border-radius: 5px;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            @include displayFlexCenter;
+                        }
+
+                        p {
+                            color: white;
+                            font-family: Lakes;
+                            font-size: 20px;
+                        }
+                    }
+
+
+                    .userCommentTextSection {
+                        @include displayFlexCenter;
+                        width: 60%;
+                        height: auto;
+                        transform: translateY(20%);
+
+                        p {
+                            font-family: Lakes;
+                            color: white;
+                            font-size: 16px;
+
+                        }
+                    }
+
+                    .userCommentLikeBtnSection {
+                        width: 5%;
+                        height: auto;
+
+                        button {
+                            width: 30px;
+                            height: 30px;
+                            padding: 2px;
+                        }
+                    }
+
+                }
+
+                .userCommentLikess {
+                    width: 10%;
+                    height: auto;
+                    display: flex;
+                    position: relative;
+                    left: 10%;
+                    bottom: 10px;
+                    gap: 10px;
+
+                    p {
+                        color: white !important;
+                        font-family: Lakes;
+                    }
+                }
+            }
+
+            
+
+        }
+    }
+
+    .swal2-confirm {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+        border: 2px solid white;
+        color: white;
+        font-family: Lakes;
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+        padding: 2px;
+        @include displayFlexCenter;
+    }
+}
+
+#cm{
+    cursor: pointer;
+}
